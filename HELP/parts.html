@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Деталі — Довідка</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; color: #333; }
+        h1 { color: #1F3864; border-bottom: 2px solid #2E5496; padding-bottom: 10px; }
+        h2 { color: #2E5496; }
+        a { color: #2E5496; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th { background: #2E5496; color: white; padding: 8px; text-align: left; }
+        td { border: 1px solid #ccc; padding: 8px; }
+        tr:nth-child(even) { background: #EEF3FB; }
+        .popup-link { color: #E74C3C; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Назад до змісту</a>
+    <h1>Робота з деталями</h1>
+    <p>Форма «Деталі» відображає запчастини що пов'язані з позиціями замовлень.</p>
+
+    <h2>Поля таблиці</h2>
+    <table>
+        <tr><th>Поле</th><th>Опис</th><th>Тип</th></tr>
+        <tr><td>№ Деталі</td><td>Унікальний ідентифікатор деталі</td><td>Число (авто)</td></tr>
+        <tr><td>№ Позиції</td><td>Посилання на позицію замовлення</td><td>Число (FK)</td></tr>
+        <tr><td>Назва деталі</td><td>Найменування деталі або запчастини</td><td>Текст</td></tr>
+        <tr><td>Артикул</td><td>Унікальний номер деталі</td><td>Текст</td></tr>
+        <tr><td>На складі</td><td>Кількість одиниць на складі</td><td>Число</td></tr>
+    </table>
+
+    <h2>Пов'язані розділи</h2>
+    <p><a href="items.html">← Позиції</a> | <a href="index.html">Зміст</a></p>
+</body>
+</html>

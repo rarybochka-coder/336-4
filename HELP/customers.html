@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Клієнти — Довідка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            color: #333;
+        }
+
+        h1 {
+            color: #1F3864;
+            border-bottom: 2px solid #2E5496;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2E5496;
+        }
+
+        a {
+            color: #2E5496;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        th {
+            background: #2E5496;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background: #EEF3FB;
+        }
+
+        .btn-desc {
+            background: #EEF3FB;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+
+        .popup-link {
+            color: #E74C3C;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Назад до змісту</a>
+    <h1>Робота з клієнтами</h1>
+    <p>Форма «Клієнти» дозволяє переглядати та редагувати інформацію про клієнтів.</p>
+
+    <h2>Поля таблиці</h2>
+    <table>
+        <tr><th>Поле</th><th>Опис</th><th>Тип</th></tr>
+        <tr><td>№ Клієнта</td><td>Унікальний ідентифікатор</td><td>Число (авто)</td></tr>
+        <tr><td>Ім'я</td><td>Повне ім'я клієнта</td><td>Текст</td></tr>
+        <tr><td>Електронна пошта</td><td>Email адреса</td><td>Текст</td></tr>
+        <tr><td>Телефон</td><td>Номер телефону</td><td>Текст</td></tr>
+        <tr><td>Адреса</td><td>Поштова адреса</td><td>Текст</td></tr>
+    </table>
+
+    <h2>Кнопки керування</h2>
+    <div class="btn-desc"><b>|◄ Перший</b> — перехід до першого запису</div>
+    <div class="btn-desc"><b>◄ Попередній</b> — перехід до попереднього запису</div>
+    <div class="btn-desc"><b>► Наступний</b> — перехід до наступного запису</div>
+    <div class="btn-desc"><b>►| Останній</b> — перехід до останнього запису</div>
+    <div class="btn-desc"><b>+ Додати</b> — створити новий порожній рядок</div>
+    <div class="btn-desc"><b>✕ Видалити</b> — видалити вибраний рядок</div>
+    <div class="btn-desc"><b>💾 Зберегти</b> — зберегти нові записи до БД</div>
+
+    <h2>Пошук</h2>
+    <p>
+        Введіть текст у поле пошуку та натисніть 🔍.
+        Пошук виконується по полях: Ім'я, Email, Телефон, Адреса.
+    </p>
+    <p>Очистіть поле та натисніть пошук для відображення всіх записів.</p>
+
+    <h2>Пов'язані розділи</h2>
+    <p>
+        Дивіться також:
+        <a href="orders.html">Замовлення</a> —
+        замовлення пов'язані з клієнтами через поле CustomerID.
+    </p>
+    <p>
+        <a href="orders.html" target="_blank" class="popup-link">
+            Відкрити довідку про замовлення у новому вікні →
+        </a>
+    </p>
+</body>
+</html>

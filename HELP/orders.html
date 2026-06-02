@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Замовлення — Довідка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            color: #333;
+        }
+
+        h1 {
+            color: #1F3864;
+            border-bottom: 2px solid #2E5496;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2E5496;
+        }
+
+        a {
+            color: #2E5496;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        th {
+            background: #2E5496;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background: #EEF3FB;
+        }
+
+        .btn-desc {
+            background: #EEF3FB;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+
+        .popup-link {
+            color: #E74C3C;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Назад до змісту</a>
+    <h1>Робота із замовленнями</h1>
+    <p>Форма «Замовлення» дозволяє переглядати та редагувати замовлення клієнтів.</p>
+
+    <h2>Поля таблиці</h2>
+    <table>
+        <tr><th>Поле</th><th>Опис</th><th>Тип</th></tr>
+        <tr><td>№ Замовлення</td><td>Унікальний ідентифікатор замовлення</td><td>Число (авто)</td></tr>
+        <tr><td>№ Клієнта</td><td>Посилання на клієнта</td><td>Число (FK)</td></tr>
+        <tr><td>Дата замовлення</td><td>Дата створення замовлення</td><td>Текст (дд.мм.рррр)</td></tr>
+        <tr><td>Статус</td><td>Поточний стан замовлення</td><td>Текст</td></tr>
+    </table>
+
+    <h2>Статуси замовлення</h2>
+    <table>
+        <tr><th>Статус</th><th>Опис</th></tr>
+        <tr><td>Новий</td><td>Щойно створене замовлення</td></tr>
+        <tr><td>В обробці</td><td>Замовлення обробляється</td></tr>
+        <tr><td>Виконано</td><td>Замовлення виконане</td></tr>
+        <tr><td>Скасовано</td><td>Замовлення скасоване</td></tr>
+    </table>
+
+    <h2>Пов'язані розділи</h2>
+    <p>
+        <a href="customers.html">← Клієнти</a> |
+        <a href="items.html">Позиції →</a>
+    </p>
+    <p>
+        <a href="items.html" target="_blank" class="popup-link">
+            Відкрити довідку про позиції у новому вікні →
+        </a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Позиції — Довідка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            color: #333;
+        }
+
+        h1 {
+            color: #1F3864;
+            border-bottom: 2px solid #2E5496;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2E5496;
+        }
+
+        a {
+            color: #2E5496;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        th {
+            background: #2E5496;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background: #EEF3FB;
+        }
+
+        .popup-link {
+            color: #E74C3C;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Назад до змісту</a>
+    <h1>Робота з позиціями замовлення</h1>
+    <p>Форма «Позиції» відображає товари що входять до замовлень.</p>
+
+    <h2>Поля таблиці</h2>
+    <table>
+        <tr><th>Поле</th><th>Опис</th><th>Тип</th></tr>
+        <tr><td>№ Позиції</td><td>Унікальний ідентифікатор позиції</td><td>Число (авто)</td></tr>
+        <tr><td>№ Замовлення</td><td>Посилання на замовлення</td><td>Число (FK)</td></tr>
+        <tr><td>Назва товару</td><td>Найменування товару</td><td>Текст</td></tr>
+        <tr><td>Кількість</td><td>Кількість одиниць товару</td><td>Число</td></tr>
+        <tr><td>Ціна</td><td>Ціна за одиницю товару</td><td>Число з крапкою</td></tr>
+    </table>
+
+    <h2>Пов'язані розділи</h2>
+    <p>
+        <a href="orders.html">← Замовлення</a> |
+        <a href="parts.html">Деталі →</a>
+    </p>
+    <p>
+        <a href="parts.html" target="_blank" class="popup-link">
+            Відкрити довідку про деталі у новому вікні →
+        </a>
+    </p>
+</body>
+</html>

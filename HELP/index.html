@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Довідка — Customer Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            color: #333;
+        }
+
+        h1 {
+            color: #1F3864;
+            border-bottom: 2px solid #2E5496;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2E5496;
+        }
+
+        a {
+            color: #2E5496;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .section {
+            margin: 15px 0;
+            padding: 10px;
+            background: #EEF3FB;
+            border-radius: 5px;
+        }
+
+        .note {
+            background: #FFF3CD;
+            padding: 10px;
+            border-left: 4px solid #FFC107;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Довідкова система — Customer Orders App</h1>
+    <p>Ласкаво просимо до довідки додатку управління замовленнями.</p>
+
+    <div class="note">
+        <b>Примітка:</b> Додаток є багатоланковим — клієнт (WinForms)
+        взаємодіє з базою даних через Web API.
+    </div>
+
+    <h2>Зміст</h2>
+    <div class="section">
+        <ul>
+            <li><a href="customers.html">Робота з клієнтами</a></li>
+            <li><a href="orders.html">Робота із замовленнями</a></li>
+            <li><a href="items.html">Робота з позиціями</a></li>
+            <li><a href="parts.html">Робота з деталями</a></li>
+            <li><a href="api.html">API та архітектура</a></li>
+        </ul>
+    </div>
+
+    <h2>Загальний опис</h2>
+    <p>
+        Додаток дозволяє керувати базою даних замовлень через зручний
+        графічний інтерфейс. Основні можливості:
+    </p>
+    <ul>
+        <li>Перегляд та навігація по записах таблиць</li>
+        <li>Додавання нових записів</li>
+        <li>Видалення існуючих записів</li>
+        <li>Пошук по всіх полях таблиці</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# Compiled output - DO NOT add to repository
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.user
+*.suo
+.vs/
+packages/
+*.nupkg
+
+# Keep only source files
+!*.cs
+!*.csproj
+!*.sln
+!*.html
+!*.json
+!*.config
