@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
@@ -39,7 +40,11 @@
             ordersToolStripMenuItem = new ToolStripMenuItem();
             itemsToolStripMenuItem = new ToolStripMenuItem();
             partsToolStripMenuItem = new ToolStripMenuItem();
+            toolStrip1 = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            helpContext = new ToolStripButton();
             menuStrip1.SuspendLayout();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -121,11 +126,41 @@
             partsToolStripMenuItem.Text = "Parts";
             partsToolStripMenuItem.Click += partsToolStripMenuItem_Click;
             // 
+            // toolStrip1
+            // 
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, helpContext });
+            toolStrip1.Location = new Point(0, 24);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(933, 25);
+            toolStrip1.TabIndex = 1;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(41, 22);
+            toolStripButton1.Text = "Зміст";
+            toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // helpContext
+            // 
+            helpContext.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            helpContext.Image = (Image)resources.GetObject("helpContext.Image");
+            helpContext.ImageTransparentColor = Color.Magenta;
+            helpContext.Name = "helpContext";
+            helpContext.Size = new Size(81, 22);
+            helpContext.Text = "Help Context";
+            helpContext.Click += helpContext_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 519);
+            Controls.Add(toolStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Margin = new Padding(4, 3, 4, 3);
@@ -133,6 +168,8 @@
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -150,6 +187,9 @@
         private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem itemsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem partsToolStripMenuItem;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
+        private ToolStripButton helpContext;
     }
 }
 

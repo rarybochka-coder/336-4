@@ -66,16 +66,14 @@ namespace Lab1
                 { UseShellExecute = true });
         }
 
-        private void змістToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripButton1_Click(object sender, EventArgs e)
         {
             OpenHelp("index.html");
         }
 
-        private void helpContextToolStripMenuItem_Click(object sender, EventArgs e)
+        private void helpContext_Click(object sender, EventArgs e)
         {
             OpenHelp("customers.html");
         }
-
-
     }
 }
